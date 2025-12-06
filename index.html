@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+
+    <style type="text/tailwindcss">
+      :root {
+      }
+
+      @theme {
+        --font-inter: "Inter", sans-serif;
+        --font-play: "Playfair Display", serif;
+        --font-vazir: "Vazirmatn", sans-serif;
+        --radius-40: 40px;
+        --radius-80: 80px;
+        --height-87: 348px;
+        --leading-120: 1.2;
+        --leading-140: 1.4;
+        --leading-160: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="flex items-center justify-between px-10 py-6">
+        <a href="/">
+          <img src="img/Logo.png" alt="Logo" />
+        </a>
+        <nav class="flex-1">
+          <ul
+            class="flex items-center justify-center gap-14 font-inter text-xl"
+          >
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <div class="flex items-center gap-4">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+            </button>
+
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M6 2v2M18 2v2M3 7h18M5 7l1.68 12.24A2 2 0 0 0 8.67 21h6.66a2 2 0 0 0 1.99-1.76L19 7M10 11v6M14 11v6"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="flex flex-col items-center gap-20 p-20">
+      <!-- Heading -->
+      <div class="flex flex-col items-center gap-6 w-[631px]">
+        <h1 class="font-play font-medium text-6xl text-center leading-120">
+          Enjoy Your Favorite<br />
+          Coffee with Ngopi
+        </h1>
+
+        <!-- Sub text -->
+        <p class="font-inter text-xl text-center leading-160">
+          Discover tranquility at Ngopi a sanctuary for unwinding, where your
+          evenings are perfected with relaxation and rich flavors.
+        </p>
+
+        <!-- Button -->
+        <button class="font-inter text-2xl flex items-center gap-4">
+          Explore Product
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"
+          >
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+        </button>
+      </div>
+      <!-- Images Row -->
+      <div class="flex gap-4 h-87">
+        <img
+          src="img/coffee-1.jpg"
+          alt=""
+          class="rounded-tr-80 rounded-bl-80 shrink"
+        />
+        <img
+          src="img/coffee-2.jpg"
+          alt=""
+          class="rounded-tl-80 rounded-br-80 shrink"
+        />
+        <img
+          src="img/coffee-3.jpg"
+          alt=""
+          class="rounded-tr-80 rounded-bl-80 shrink"
+        />
+        <img
+          src="img/coffee-4.jpg"
+          alt=""
+          class="rounded-tl-80 rounded-br-80 shrink"
+        />
+        <img
+          src="img/coffee-5.jpg"
+          alt=""
+          class="rounded-tr-80 rounded-bl-80 shrink"
+        />
+      </div>
+    </section>
+    <section class="flex flex-row items-center justify-center gap-10 p-20">
+      <!-- کارت 1 -->
+      <div class="flex flex-col items-center justify-center text-center">
+        <span class="font-inter text-6xl">30+</span>
+        <span class="font-play text-2xl">Coffee Variant</span>
+      </div>
+
+      <!-- کارت 2 -->
+      <div class="flex flex-col items-center justify-center text-center">
+        <span class="font-inter text-6xl">20+</span>
+        <span class="font-play text-2xl">Meeting room</span>
+      </div>
+
+      <!-- کارت 3 -->
+      <div class="flex flex-col items-center justify-center text-center">
+        <span class="font-inter text-6xl">25+</span>
+        <span class="font-play text-2xl">Event space</span>
+      </div>
+
+      <!-- کارت 4 -->
+      <div class="flex flex-col items-center justify-center text-center">
+        <span class="font-inter text-6xl">40+</span>
+        <span class="font-play text-2xl">Global Achievement</span>
+      </div>
+    </section>
+  </body>
+</html>

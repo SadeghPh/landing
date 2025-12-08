@@ -27,6 +27,7 @@
         --radius-40: 40px;
         --radius-80: 80px;
         --radius-32: 32px;
+        --radius-120: 120px;
         --height-87: 348px;
         --leading-120: 1.2;
         --leading-140: 1.4;
@@ -94,9 +95,10 @@
         </div>
       </div>
     </header>
+    <!-- Hero Section -->
     <section class="flex flex-col items-center gap-20 p-20">
       <!-- Heading -->
-      <div class="flex flex-col items-center gap-6 w-[631px]">
+      <div class="flex flex-col items-center gap-6 w-1/2">
         <h1 class="font-play font-medium text-6xl text-center leading-120">
           Enjoy Your Favorite<br />
           Coffee with Ngopi
@@ -159,10 +161,11 @@
         />
       </div>
     </section>
+    <!-- Seprator -->
     <div
       class="w-1/2 h-[1px] mx-auto bg-gradient-to-r from-black/0 via-black/60 to-black/0"
     ></div>
-
+    <!-- Counter Section -->
     <section class="flex flex-row items-center justify-center gap-10 p-20">
       <!-- col 1 counter -->
       <div class="flex flex-col items-center justify-center text-center">
@@ -196,6 +199,7 @@
         <span class="font-play text-2xl font-normal">Global Achievement</span>
       </div>
     </section>
+    <!-- Seprator -->
     <div
       class="w-1/2 h-[1px] mx-auto bg-gradient-to-r from-black/0 via-black/60 to-black/0"
     ></div>
@@ -230,8 +234,8 @@
         </button>
       </div>
 
-      <!-- Cards Row -->
-      <div class="flex gap-6 w-full max-w-6xl">
+      <!-- Cards -->
+      <div class="flex gap-6 w-full">
         <!-- Card 1 -->
         <div class="flex flex-col w-1/4 overflow-hidden">
           <img
@@ -490,6 +494,77 @@
                 </svg>
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="flex flex-col items-center gap-20 p-20">
+      <!-- Title block -->
+      <div class="flex flex-col items-center gap-2">
+        <p class="font-inter text-primary/60">About us</p>
+
+        <h2 class="font-play font-medium text-4xl text-center">
+          Why we are the best
+        </h2>
+      </div>
+
+      <!-- Content: left text + right images -->
+      <div class="flex items-center gap-20">
+        <!-- Left column: paragraphs + button -->
+        <div class="flex flex-col gap-4 w-1/2">
+          <p class="font-inter">
+            Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+            dolor fringilla volutpat lectus amet. Integer sed pretium odio
+            lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel
+            tortor dui adipiscing.
+          </p>
+
+          <p class="font-inter">
+            Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+            dolor fringilla volutpat lectus amet. Integer sed pretium odio
+            lectus at malesuada sed eget nunc.
+          </p>
+
+          <p class="font-inter">
+            Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+            dolor fringilla volutpat lectus amet.
+          </p>
+
+          <button class="font-inter flex items-center gap-3 self-start">
+            Read More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m7 7 10 10" />
+              <path d="M17 7v10H7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Right column: two images -->
+        <div class="grid grid-cols-2 gap-6 w-1/2">
+          <div class="pt-16">
+            <img
+              src="img/coffee-1.jpg"
+              alt="Coffee making"
+              class="rounded-bl-120 rounded-tr-120 aspect-[288/378] object-cover"
+            />
+          </div>
+          <div class="pb-16">
+            <img
+              src="img/coffee-2.jpg"
+              alt="Coffee beans"
+              class="rounded-br-120 rounded-tl-120 aspect-[288/378] object-cover"
+            />
           </div>
         </div>
       </div>
